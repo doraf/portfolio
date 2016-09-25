@@ -5,14 +5,16 @@ html {
   box-sizing: inherit; }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
-  appearance: none;
-  background-color: #1565c0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #85c79f;
   border: 0;
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: helvetica;
+  font-family: "Raleway", sans-serif;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -20,18 +22,22 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   padding: 0.75em 1.5em;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: background-color 150ms ease;
   transition: background-color 150ms ease;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-    background-color: #11519a;
+    background-color: #6a9f7f;
     color: #fff; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
     button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
-      background-color: #1565c0; }
+      background-color: #85c79f; }
 
 fieldset {
   background-color: transparent;
@@ -53,33 +59,42 @@ input,
 select,
 textarea {
   display: block;
-  font-family: helvetica;
+  font-family: "Raleway", sans-serif;
   font-size: 1em; }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #c9d6cd;
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   margin-bottom: 0.75em;
   padding: 0.5em;
+  -webkit-transition: border-color 150ms ease;
   transition: border-color 150ms ease;
   width: 100%; }
   input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover {
-    border-color: #b1b1b1; }
+    border-color: #a1aba4; }
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus {
-    border-color: #1565c0;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(18, 89, 169, 0.7);
+    border-color: #85c79f;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(116, 191, 145, 0.7);
     outline: none; }
   input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled {
     background-color: #f2f2f2;
     cursor: not-allowed; }
     input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
-      border: 1px solid #ddd; }
+      border: 1px solid #c9d6cd; }
+  input[type="color"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="datetime"]::-webkit-input-placeholder, input[type="datetime-local"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="time"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder, input:not([type])::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #dfe6e1; }
+  input[type="color"]::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="datetime"]::-moz-placeholder, input[type="datetime-local"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="month"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="text"]::-moz-placeholder, input[type="time"]::-moz-placeholder, input[type="url"]::-moz-placeholder, input[type="week"]::-moz-placeholder, input:not([type])::-moz-placeholder, textarea::-moz-placeholder {
+    color: #dfe6e1; }
+  input[type="color"]:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder, input[type="datetime"]:-ms-input-placeholder, input[type="datetime-local"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="month"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="time"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, input[type="week"]:-ms-input-placeholder, input:not([type]):-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #dfe6e1; }
   input[type="color"]::placeholder, input[type="date"]::placeholder, input[type="datetime"]::placeholder, input[type="datetime-local"]::placeholder, input[type="email"]::placeholder, input[type="month"]::placeholder, input[type="number"]::placeholder, input[type="password"]::placeholder, input[type="search"]::placeholder, input[type="tel"]::placeholder, input[type="text"]::placeholder, input[type="time"]::placeholder, input[type="url"]::placeholder, input[type="week"]::placeholder, input:not([type])::placeholder, textarea::placeholder {
-    color: #858585; }
+    color: #dfe6e1; }
 
 textarea {
   resize: vertical; }
@@ -108,6 +123,9 @@ html {
 html,
 body {
   height: 100%; }
+
+body {
+  margin: 5px; }
 
 ul,
 ol {
@@ -140,13 +158,13 @@ table {
   width: 100%; }
 
 th {
-  border-bottom: 1px solid #a6a6a6;
+  border-bottom: 1px solid #97a19a;
   font-weight: 600;
   padding: 0.75em 0;
   text-align: left; }
 
 td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #c9d6cd;
   padding: 0.75em 0; }
 
 tr,
@@ -155,8 +173,8 @@ th {
   vertical-align: middle; }
 
 body {
-  color: #333;
-  font-family: helvetica;
+  color: #c9d6cd;
+  font-family: "Raleway", sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -166,24 +184,98 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: helvetica;
+  font-family: "Raleway", sans-serif;
   font-size: 1.333em;
   line-height: 1.2;
-  margin: 0 0 0.75em; }
+  margin: 0 0 0.75em;
+  font-weight: 400; }
+
+h1 {
+  font-weight: 800;
+  color: #85c79f;
+  font-size: 2.5625em; }
 
 p {
-  margin: 0 0 0.75em; }
+  margin: 0 0 0.75em;
+  font-size: 1.125em;
+  line-height: 2.0625em; }
 
 a {
-  color: #1565c0;
+  color: #85c79f;
   text-decoration: none;
+  -webkit-transition: color 150ms ease;
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
-    color: #104c90; }
+    color: #649577; }
 
 hr {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #c9d6cd;
   border-left: 0;
   border-right: 0;
   border-top: 0;
   margin: 1.5em 0; }
+
+.block {
+  background-color: #363f3c;
+  padding: 50px;
+  border: solid #fff 5px;
+  text-align: center; }
+  .block p:last-of-type, .block h3:last-of-type {
+    margin-bottom: 0; }
+
+.name {
+  margin: 0 0 6px 0; }
+
+.title {
+  font-size: 1.5em; }
+
+.icon-group {
+  height: 50px;
+  margin: 0 0 20px 0; }
+
+.icon-heart, .icon-page {
+  max-height: 100%;
+  margin: 0 8px; }
+
+.icon-heart {
+  width: 50px; }
+
+.icon-page {
+  width: 57px; }
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px 0 0 0;
+  text-indent: -9999px; }
+
+.codepen {
+  background: url(/i/codepen.svg) no-repeat;
+  height: 33px;
+  width: 33px;
+  display: block; }
+
+.twitter {
+  background: url(/i/twitter.svg) no-repeat;
+  height: 33px;
+  width: 33px;
+  display: block; }
+
+.github {
+  background: url(/i/github.svg) no-repeat;
+  height: 33px;
+  width: 33px;
+  display: block; }
+
+.mail {
+  background: url(/i/mail.svg) no-repeat;
+  height: 33px;
+  width: 33px;
+  display: block; }

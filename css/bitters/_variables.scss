@@ -4,8 +4,15 @@ $large-screen: 900px;
 
 // Typography
 // $base-font-family: $font-stack-system;
-$base-font-family: helvetica;
+$raleway: 'Raleway', sans-serif;
+
+$base-font-family: $raleway;
 $heading-font-family: $base-font-family;
+
+//font weight
+$light: 300;
+$medium: 400;
+$heavy: 800;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -33,12 +40,9 @@ $coral: #fc536c;
 $peach: #e7937a;
 $yellow: #ebe39e;
 
-$blue: #1565c0;
-$dark-gray: #333;
-
 // Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+$base-font-color: $light-gray;
+$action-color: $mint;
 
 // Border
 $base-border-color: $light-gray;
