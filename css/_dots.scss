@@ -1,0 +1,21 @@
+.dots{
+	background-color: $dark-green;
+	background-image: 	radial-gradient($green 7px, transparent 7px),
+                    	radial-gradient($green 7px, transparent 7px),
+                    	radial-gradient($green 7px, transparent 7px),
+                    	radial-gradient($green 7px, transparent 7px);
+	background-size:100px 100px;
+	background-position: 0 0, 50px 0, 25px 50px, 75px 50px; 
+	&:hover{
+	    background-image: 	radial-gradient(#85c79f 7px, transparent 7px),
+	                    	radial-gradient(#fc536c 7px, transparent 7px),
+	                    	radial-gradient(#e99377 7px, transparent 7px),
+	                    	radial-gradient(#ebe49a 7px, transparent 7px);
+	    animation: dot-scramble 1s infinite linear;
+	}
+}
+
+@keyframes dot-scramble{
+  from { background-position: 0 0, 50px 0, 25px 50px, 75px 50px; }
+  to { background-position: -100px -100px, -50px -100px, -75px -50px, -25px -50px; }
+}

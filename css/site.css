@@ -377,3 +377,27 @@ hr {
     -webkit-box-ordinal-group: 8;
         -ms-flex-order: 7;
             order: 7; } }
+
+.dots {
+  background-color: #2c3330;
+  background-image: -webkit-radial-gradient(#363f3c 7px, transparent 7px), -webkit-radial-gradient(#363f3c 7px, transparent 7px), -webkit-radial-gradient(#363f3c 7px, transparent 7px), -webkit-radial-gradient(#363f3c 7px, transparent 7px);
+  background-image: radial-gradient(#363f3c 7px, transparent 7px), radial-gradient(#363f3c 7px, transparent 7px), radial-gradient(#363f3c 7px, transparent 7px), radial-gradient(#363f3c 7px, transparent 7px);
+  background-size: 100px 100px;
+  background-position: 0 0, 50px 0, 25px 50px, 75px 50px; }
+  .dots:hover {
+    background-image: -webkit-radial-gradient(#85c79f 7px, transparent 7px), -webkit-radial-gradient(#fc536c 7px, transparent 7px), -webkit-radial-gradient(#e99377 7px, transparent 7px), -webkit-radial-gradient(#ebe49a 7px, transparent 7px);
+    background-image: radial-gradient(#85c79f 7px, transparent 7px), radial-gradient(#fc536c 7px, transparent 7px), radial-gradient(#e99377 7px, transparent 7px), radial-gradient(#ebe49a 7px, transparent 7px);
+    -webkit-animation: dot-scramble 1s infinite linear;
+            animation: dot-scramble 1s infinite linear; }
+
+@-webkit-keyframes dot-scramble {
+  from {
+    background-position: 0 0, 50px 0, 25px 50px, 75px 50px; }
+  to {
+    background-position: -100px -100px, -50px -100px, -75px -50px, -25px -50px; } }
+
+@keyframes dot-scramble {
+  from {
+    background-position: 0 0, 50px 0, 25px 50px, 75px 50px; }
+  to {
+    background-position: -100px -100px, -50px -100px, -75px -50px, -25px -50px; } }
