@@ -9,10 +9,21 @@
 }
 
 .block{
-	flex-basis: 33.3333333333333333%;
 	height: calc(33.3333333333333333vh - 5px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	@include media($three-columns){
+		flex-basis: 33.3333333333333333%;
+	}
+	@include media($two-columns){
+		flex-basis: 50%;
+	}
+}
+
+.block.social{
+	@include media($two-columns){
+		flex-basis: 100%;
+	}
 }

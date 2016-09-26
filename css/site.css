@@ -299,8 +299,6 @@ hr {
   border: solid #fff 5px; }
 
 .block {
-  -ms-flex-preferred-size: 33.3333333333333333%;
-      flex-basis: 33.3333333333333333%;
   height: calc(33.3333333333333333vh - 5px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,3 +313,16 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media screen and (min-width: 1096px) {
+    .block {
+      -ms-flex-preferred-size: 33.3333333333333333%;
+          flex-basis: 33.3333333333333333%; } }
+  @media screen and (max-width: 1095px) {
+    .block {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; } }
+
+@media screen and (max-width: 1095px) {
+  .block.social {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
