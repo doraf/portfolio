@@ -1,6 +1,8 @@
 // breakpoints
 $three-two-col:			1096px;
+$two-one-col:			700px;
 
 //media queries
 $three-columns:			new-breakpoint(min-width $three-two-col);
-$two-columns:			new-breakpoint(max-width ($three-two-col)-1);
+$two-columns:			new-breakpoint(max-width ($three-two-col)-1 min-width $two-one-col);
+$one-column:			new-breakpoint(max-width ($two-one-col)-1);

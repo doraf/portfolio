@@ -20,10 +20,61 @@
 	@include media($two-columns){
 		flex-basis: 50%;
 	}
+	@include media($one-column){
+		flex-basis: 100%;
+	}
 }
 
 .block.social{
 	@include media($two-columns){
 		flex-basis: 100%;
+	}
+}
+
+.block.null{
+	@include media($one-column){
+		display: none;
+	}
+}
+
+.block.me{
+	@include media($one-column){
+		order: 1;
+	}
+}
+
+.block.intro{
+	@include media($one-column){
+		order: 2;
+	}
+}
+
+.block.work{
+	@include media($one-column){
+		order: 3;
+	}
+}
+
+.block.dots{
+	@include media($one-column){
+		order: 4;
+	}
+}
+
+.block.grid{
+	@include media($one-column){
+		order: 5;
+	}
+}
+
+.block.star{
+	@include media($one-column){
+		order: 6;
+	}
+}
+
+.block.social{
+	@include media($one-column){
+		order: 7;
 	}
 }
