@@ -1,0 +1,8 @@
+p {
+  margin: 0 0 $small-spacing;
+  font-size: em(18px);
+  line-height: em(33px);
+  @include media($shrink-text){
+  	font-size: em(16px);
+  }
+}

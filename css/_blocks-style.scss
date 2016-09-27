@@ -1,10 +1,15 @@
 .block{
 	background-color: $green;
-	padding: 0 50px;
 	border: solid $white 5px;
 	text-align: center;
 	p:last-of-type, h3:last-of-type{
 		margin-bottom: 0;		
+	}
+	@include media($full-text){
+		padding: 0 50px;
+	}
+	@include media($shrink-text){
+		padding: 0 35px;
 	}
 }
 

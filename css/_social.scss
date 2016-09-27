@@ -1,0 +1,7 @@
+.codepen, .twitter, .mail, .github{
+	transition: all .3s ease-in-out;
+	&:hover{
+		transform: scale(1.35);
+		cursor: pointer;
+	}
+}
