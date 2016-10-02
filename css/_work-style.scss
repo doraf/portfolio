@@ -45,9 +45,11 @@
 
 .site-info{
 	@include clearfix;
-	border-bottom: solid 1px $medium-gray;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
+	&:not(:last-of-type){
+		border-bottom: solid 1px $medium-gray;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
 }
 
 .work-content ul li{

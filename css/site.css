@@ -746,7 +746,7 @@ p {
     margin-bottom: 20px; } }
 
 @media screen and (min-width: 900px) {
-  .ss {
+  .ss:not(:last-of-type) {
     margin: 0 0 60px 20px; } }
 
 .home-link {
@@ -784,14 +784,14 @@ p {
   .site-about ul li {
     line-height: 1.5; }
 
-.site-info {
+.site-info::after {
+  clear: both;
+  content: "";
+  display: table; }
+.site-info:not(:last-of-type) {
   border-bottom: solid 1px #9da39f;
   padding-bottom: 20px;
   margin-bottom: 20px; }
-  .site-info::after {
-    clear: both;
-    content: "";
-    display: table; }
 
 .work-content ul li {
   list-style: disc;
