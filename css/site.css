@@ -800,6 +800,9 @@ p {
   .work-content ul li span {
     color: #2c3330; }
 
+.ss {
+  box-shadow: 1px 1px 2px 2px #d7d9d8; }
+
 .modal label {
   cursor: pointer;
   margin-bottom: 0; }
