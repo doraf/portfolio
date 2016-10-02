@@ -1,0 +1,45 @@
+.work-nav, .work-content{
+	background-color: #ededed;
+	border: solid $white 5px;
+	padding: 40px;
+	color: $dark-green;
+	p:last-of-type, h3:last-of-type{
+		margin-bottom: 0;		
+	}
+
+	a{
+		color: darken($mint, 20%);
+		&:hover{
+			color: darken($mint, 40%);
+		}
+	}
+	h1{
+		color: $coral;
+	}
+}
+
+.work-nav-link li{
+	margin-bottom: 8px;
+	font-size: 18px;
+}
+
+.site-title{
+	font-weight: $heavy;
+	color: darken($mint, 20%);
+}
+
+.site-about{
+	h4{
+		font-weight: $heavy;
+		font-size: em(16px);
+		margin-bottom: 0;
+		line-height: 2;
+	}
+	ul{
+		font-size: em(14px);
+		margin-bottom: 15px;
+		li{
+			line-height: 1.5;
+		}
+	}
+}

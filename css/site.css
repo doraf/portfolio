@@ -717,3 +717,36 @@ p {
   opacity: 1; }
   .block:hover .cp-link a {
     color: #fff; }
+
+.work-nav, .work-content {
+  background-color: #ededed;
+  border: solid #fff 5px;
+  padding: 40px;
+  color: #2c3330; }
+  .work-nav p:last-of-type, .work-nav h3:last-of-type, .work-content p:last-of-type, .work-content h3:last-of-type {
+    margin-bottom: 0; }
+  .work-nav a, .work-content a {
+    color: #489e6a; }
+    .work-nav a:hover, .work-content a:hover {
+      color: #28583b; }
+  .work-nav h1, .work-content h1 {
+    color: #fc536c; }
+
+.work-nav-link li {
+  margin-bottom: 8px;
+  font-size: 18px; }
+
+.site-title {
+  font-weight: 800;
+  color: #489e6a; }
+
+.site-about h4 {
+  font-weight: 800;
+  font-size: 1em;
+  margin-bottom: 0;
+  line-height: 2; }
+.site-about ul {
+  font-size: 0.875em;
+  margin-bottom: 15px; }
+  .site-about ul li {
+    line-height: 1.5; }
