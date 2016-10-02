@@ -1,0 +1,36 @@
+.work-nav, .work-content{
+	@include media($three-columns){
+		padding: 40px;
+	}
+	@include media($two-columns){
+		padding: 20px;
+	}
+	@include media($one-column){
+		padding: 20px;
+	}
+}
+
+.site-info{
+	margin-bottom: 20px;
+}
+
+.site-about{
+}
+
+.screenshots{
+	@include media($two-work){
+		float: right;
+	}
+}
+
+.site-view{
+	@include media($two-work){
+		margin-bottom: 20px;
+	}
+}
+
+.ss{
+	@include media($two-work){
+		margin: 0 0 60px 20px;
+	}
+}

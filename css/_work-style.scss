@@ -1,7 +1,6 @@
 .work-nav, .work-content{
 	background-color: #ededed;
 	border: solid $white 5px;
-	padding: 40px;
 	color: $dark-green;
 	p:last-of-type, h3:last-of-type{
 		margin-bottom: 0;		
@@ -42,4 +41,24 @@
 			line-height: 1.5;
 		}
 	}
+}
+
+.site-info{
+	@include clearfix;
+	border-bottom: solid 1px $medium-gray;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.work-content ul li{
+	list-style: disc;
+	margin-left: 20px;
+	color: $coral;
+	span{
+		color: $dark-green;
+	}
+	// &:before{
+	// 	// content: '• ';
+	// 	color: $coral;
+	// }
 }
